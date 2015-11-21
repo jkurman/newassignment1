@@ -33,37 +33,29 @@
                 <a href="#top" onclick = $("#menu-close").click(); >Home</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                <a href="#angulargraph" onclick = $("#menu-close").click(); >Angular Graph</a>
             </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
+
         </ul>
     </nav>
 
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>Start Bootstrap</h1>
-            <h3>Free Bootstrap Themes &amp; Templates</h3>
+            <h1>Assignment 3</h1>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <a href="#angulargraph" class="btn btn-dark btn-lg">Angular Graph</a>
         </div>
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="about" class="about" ng-app='splashchart'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                <div ng-controller="MainController">
+               <div id="series_chart_div" style="width: 1000px; height: 500px;"></div>
+            </div>
                 </div>
             </div>
             <!-- /.row -->
