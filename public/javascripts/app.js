@@ -33,7 +33,10 @@ app.controller('MainController', ['$scope', '$http',  function($scope, $http) {
      title: 'SplashBrothers vs Top 10 Three Point Shooters',
      hAxis: {title: 'Threes Made'},
      vAxis: {title: 'Threes Attempted'},
-     bubble: {textStyle: {fontSize: 11}
+     fontName: 'Palatino Linotype',
+     backgroundColor:"#707070",
+colors:['red','blue','yellow'],
+     bubble: {textStyle: {fontSize: 13}
      }
     };
     
